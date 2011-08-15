@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <title>Mapping Gothic France</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1"> 
+    <link rel="stylesheet" type="text/css" href="style/mgf.css"/>
+    <script src="lib/zepto.js"></script>
+    <script src="lib/underscore.js"></script>
+    <script src="lib/backbone.js"></script>
+    <script src="data.js"></script>
+    <script src="template.js"></script>
+    <script src="models.js"></script>
+  </head>
+  <body>
+    <div id="container">
+      <div id="header">
+        Mapping Gothic France
+      </div>
+      <div id="content"></div>
+      <div id="templates">
+        <div class="template" data-name="front">
+          <div class="intro">
+            <h1>Mapping Gothic France</h1>
+            <p>With a database of images, texts, charts and historical maps, Mapping Gothic France invites you to explore the parallel stories of Gothic architecture and the formation of France in the 12th and 13th centuries, considered in three dimensions:</p>
+            <div class="dimensions">
+              <div class="dimension">Space</div>
+              <div class="dimension">Time</div>
+              <div class="dimension">Narrative</div>
+            </div>
+          </div>
+        </div>
+        <div class="template" data-name="monograph">
+          <h1 data-key="name"></h1>
+        </div>
+        <div class="template" data-name="building" data-extends="monograph">
+          <h3>This is a building monograph</h3>
+        </div>
+        <div class="template" data-name="person" data-extends="monograph">
+          <h3>This is a person monograph</h3>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
